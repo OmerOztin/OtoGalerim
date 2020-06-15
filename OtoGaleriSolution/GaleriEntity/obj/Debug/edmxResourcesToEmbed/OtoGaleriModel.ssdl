@@ -1,0 +1,167 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="DB_OtoGaleriModel.Store" Provider="System.Data.SqlClient" ProviderManifestToken="2012" Alias="Self" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
+  <EntityType Name="TB_Araba">
+    <Key>
+      <PropertyRef Name="ArabaID" />
+    </Key>
+    <Property Name="ArabaID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="Marka" Type="varchar" MaxLength="50" />
+    <Property Name="Model" Type="varchar" MaxLength="50" />
+    <Property Name="Yil" Type="datetime" />
+    <Property Name="Km" Type="varchar" MaxLength="50" />
+    <Property Name="Yakıt" Type="varchar" MaxLength="50" />
+    <Property Name="Renk" Type="varchar" MaxLength="50" />
+    <Property Name="AracTNo" Type="varchar" MaxLength="50" />
+    <Property Name="Plaka" Type="varchar" MaxLength="50" />
+    <Property Name="AlisFiyat" Type="int" />
+    <Property Name="Fiyat" Type="int" />
+    <Property Name="TedarikciAdi" Type="varchar" MaxLength="50" />
+    <Property Name="TedarikciTel" Type="varchar" MaxLength="50" />
+    <Property Name="AlindigiTarih" Type="datetime" />
+    <Property Name="ResimID" Type="int" />
+  </EntityType>
+  <EntityType Name="TB_Banka">
+    <Key>
+      <PropertyRef Name="İslemID" />
+    </Key>
+    <Property Name="İslemID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="İslemAciklama" Type="varchar(max)" />
+    <Property Name="İslemCesidi" Type="int" />
+    <Property Name="BankadakiPara" Type="int" />
+    <Property Name="AlacakMiktari" Type="int" />
+    <Property Name="BorcMiktari" Type="int" />
+    <Property Name="KasadakiPara" Type="int" />
+  </EntityType>
+  <EntityType Name="TB_MarkaModel">
+    <Key>
+      <PropertyRef Name="ArabaID" />
+    </Key>
+    <Property Name="ArabaID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="MarkaKodu" Type="int" />
+    <Property Name="ModelKodu" Type="int" />
+    <Property Name="MarkaAdı" Type="varchar(max)" />
+    <Property Name="ModelAdı" Type="varchar(max)" />
+  </EntityType>
+  <EntityType Name="TB_Musteri">
+    <Key>
+      <PropertyRef Name="MusteriID" />
+    </Key>
+    <Property Name="MusteriID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="Musteriİsim" Type="varchar" MaxLength="75" />
+    <Property Name="Telefon" Type="varchar" MaxLength="15" />
+    <Property Name="Adres" Type="varchar" MaxLength="100" />
+    <Property Name="ArabaID" Type="int" />
+  </EntityType>
+  <EntityType Name="TB_Resimler">
+    <Key>
+      <PropertyRef Name="ResimID" />
+    </Key>
+    <Property Name="ResimID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="ArabaID" Type="int" />
+    <Property Name="ResimYolu" Type="varchar(max)" />
+  </EntityType>
+  <EntityType Name="TB_Satilan">
+    <Key>
+      <PropertyRef Name="SatisID" />
+    </Key>
+    <Property Name="SatisID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="SatisFiyat" Type="int" />
+    <Property Name="SatisTarihi" Type="datetime" />
+    <Property Name="MusteriID" Type="int" />
+    <Property Name="ArabaID" Type="int" />
+    <Property Name="AlisFiyat" Type="int" />
+    <Property Name="Marka" Type="varchar" MaxLength="50" />
+    <Property Name="Model" Type="varchar" MaxLength="50" />
+    <Property Name="Plaka" Type="varchar" MaxLength="50" />
+    <Property Name="ResimID" Type="int" />
+    <Property Name="İslemID" Type="int" />
+  </EntityType>
+  <Association Name="FK_TB_Araba_TB_Resimler">
+    <End Role="TB_Resimler" Type="Self.TB_Resimler" Multiplicity="0..1" />
+    <End Role="TB_Araba" Type="Self.TB_Araba" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="TB_Resimler">
+        <PropertyRef Name="ResimID" />
+      </Principal>
+      <Dependent Role="TB_Araba">
+        <PropertyRef Name="ResimID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_TB_Musteri_TB_Araba">
+    <End Role="TB_Araba" Type="Self.TB_Araba" Multiplicity="0..1" />
+    <End Role="TB_Musteri" Type="Self.TB_Musteri" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="TB_Araba">
+        <PropertyRef Name="ArabaID" />
+      </Principal>
+      <Dependent Role="TB_Musteri">
+        <PropertyRef Name="ArabaID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_TB_Satilan_TB_Araba">
+    <End Role="TB_Araba" Type="Self.TB_Araba" Multiplicity="0..1" />
+    <End Role="TB_Satilan" Type="Self.TB_Satilan" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="TB_Araba">
+        <PropertyRef Name="ArabaID" />
+      </Principal>
+      <Dependent Role="TB_Satilan">
+        <PropertyRef Name="ArabaID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_TB_Satilan_TB_Banka">
+    <End Role="TB_Banka" Type="Self.TB_Banka" Multiplicity="0..1" />
+    <End Role="TB_Satilan" Type="Self.TB_Satilan" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="TB_Banka">
+        <PropertyRef Name="İslemID" />
+      </Principal>
+      <Dependent Role="TB_Satilan">
+        <PropertyRef Name="İslemID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_TB_Satilan_TB_Musteri">
+    <End Role="TB_Musteri" Type="Self.TB_Musteri" Multiplicity="0..1" />
+    <End Role="TB_Satilan" Type="Self.TB_Satilan" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="TB_Musteri">
+        <PropertyRef Name="MusteriID" />
+      </Principal>
+      <Dependent Role="TB_Satilan">
+        <PropertyRef Name="MusteriID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <EntityContainer Name="DB_OtoGaleriModelStoreContainer">
+    <EntitySet Name="TB_Araba" EntityType="Self.TB_Araba" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="TB_Banka" EntityType="Self.TB_Banka" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="TB_MarkaModel" EntityType="Self.TB_MarkaModel" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="TB_Musteri" EntityType="Self.TB_Musteri" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="TB_Resimler" EntityType="Self.TB_Resimler" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="TB_Satilan" EntityType="Self.TB_Satilan" Schema="dbo" store:Type="Tables" />
+    <AssociationSet Name="FK_TB_Araba_TB_Resimler" Association="Self.FK_TB_Araba_TB_Resimler">
+      <End Role="TB_Resimler" EntitySet="TB_Resimler" />
+      <End Role="TB_Araba" EntitySet="TB_Araba" />
+    </AssociationSet>
+    <AssociationSet Name="FK_TB_Musteri_TB_Araba" Association="Self.FK_TB_Musteri_TB_Araba">
+      <End Role="TB_Araba" EntitySet="TB_Araba" />
+      <End Role="TB_Musteri" EntitySet="TB_Musteri" />
+    </AssociationSet>
+    <AssociationSet Name="FK_TB_Satilan_TB_Araba" Association="Self.FK_TB_Satilan_TB_Araba">
+      <End Role="TB_Araba" EntitySet="TB_Araba" />
+      <End Role="TB_Satilan" EntitySet="TB_Satilan" />
+    </AssociationSet>
+    <AssociationSet Name="FK_TB_Satilan_TB_Banka" Association="Self.FK_TB_Satilan_TB_Banka">
+      <End Role="TB_Banka" EntitySet="TB_Banka" />
+      <End Role="TB_Satilan" EntitySet="TB_Satilan" />
+    </AssociationSet>
+    <AssociationSet Name="FK_TB_Satilan_TB_Musteri" Association="Self.FK_TB_Satilan_TB_Musteri">
+      <End Role="TB_Musteri" EntitySet="TB_Musteri" />
+      <End Role="TB_Satilan" EntitySet="TB_Satilan" />
+    </AssociationSet>
+  </EntityContainer>
+</Schema>

@@ -1,0 +1,98 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+  <EntityContainerMapping StorageEntityContainer="DB_OtoGaleriModelStoreContainer" CdmEntityContainer="DB_OtoGaleriEntities">
+    <EntitySetMapping Name="TB_Araba">
+      <EntityTypeMapping TypeName="DB_OtoGaleriModel.TB_Araba">
+        <MappingFragment StoreEntitySet="TB_Araba">
+          <ScalarProperty Name="ArabaID" ColumnName="ArabaID" />
+          <ScalarProperty Name="Marka" ColumnName="Marka" />
+          <ScalarProperty Name="Model" ColumnName="Model" />
+          <ScalarProperty Name="Yil" ColumnName="Yil" />
+          <ScalarProperty Name="Km" ColumnName="Km" />
+          <ScalarProperty Name="Yakıt" ColumnName="Yakıt" />
+          <ScalarProperty Name="Renk" ColumnName="Renk" />
+          <ScalarProperty Name="AracTNo" ColumnName="AracTNo" />
+          <ScalarProperty Name="Plaka" ColumnName="Plaka" />
+          <ScalarProperty Name="AlisFiyat" ColumnName="AlisFiyat" />
+          <ScalarProperty Name="Fiyat" ColumnName="Fiyat" />
+          <ScalarProperty Name="TedarikciAdi" ColumnName="TedarikciAdi" />
+          <ScalarProperty Name="TedarikciTel" ColumnName="TedarikciTel" />
+          <ScalarProperty Name="AlindigiTarih" ColumnName="AlindigiTarih" />
+          <ScalarProperty Name="ResimID" ColumnName="ResimID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="TB_Banka">
+      <EntityTypeMapping TypeName="DB_OtoGaleriModel.TB_Banka">
+        <MappingFragment StoreEntitySet="TB_Banka">
+          <ScalarProperty Name="İslemID" ColumnName="İslemID" />
+          <ScalarProperty Name="İslemAciklama" ColumnName="İslemAciklama" />
+          <ScalarProperty Name="İslemCesidi" ColumnName="İslemCesidi" />
+          <ScalarProperty Name="BankadakiPara" ColumnName="BankadakiPara" />
+          <ScalarProperty Name="AlacakMiktari" ColumnName="AlacakMiktari" />
+          <ScalarProperty Name="BorcMiktari" ColumnName="BorcMiktari" />
+          <ScalarProperty Name="KasadakiPara" ColumnName="KasadakiPara" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="TB_MarkaModel">
+      <EntityTypeMapping TypeName="DB_OtoGaleriModel.TB_MarkaModel">
+        <MappingFragment StoreEntitySet="TB_MarkaModel">
+          <ScalarProperty Name="ArabaID" ColumnName="ArabaID" />
+          <ScalarProperty Name="MarkaKodu" ColumnName="MarkaKodu" />
+          <ScalarProperty Name="ModelKodu" ColumnName="ModelKodu" />
+          <ScalarProperty Name="MarkaAdı" ColumnName="MarkaAdı" />
+          <ScalarProperty Name="ModelAdı" ColumnName="ModelAdı" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="TB_Musteri">
+      <EntityTypeMapping TypeName="DB_OtoGaleriModel.TB_Musteri">
+        <MappingFragment StoreEntitySet="TB_Musteri">
+          <ScalarProperty Name="MusteriID" ColumnName="MusteriID" />
+          <ScalarProperty Name="Musteriİsim" ColumnName="Musteriİsim" />
+          <ScalarProperty Name="Telefon" ColumnName="Telefon" />
+          <ScalarProperty Name="Adres" ColumnName="Adres" />
+          <ScalarProperty Name="ArabaID" ColumnName="ArabaID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="TB_Resimler">
+      <EntityTypeMapping TypeName="DB_OtoGaleriModel.TB_Resimler">
+        <MappingFragment StoreEntitySet="TB_Resimler">
+          <ScalarProperty Name="ResimID" ColumnName="ResimID" />
+          <ScalarProperty Name="ArabaID" ColumnName="ArabaID" />
+          <ScalarProperty Name="ResimYolu" ColumnName="ResimYolu" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="TB_Satilan">
+      <EntityTypeMapping TypeName="DB_OtoGaleriModel.TB_Satilan">
+        <MappingFragment StoreEntitySet="TB_Satilan">
+          <ScalarProperty Name="SatisID" ColumnName="SatisID" />
+          <ScalarProperty Name="SatisFiyat" ColumnName="SatisFiyat" />
+          <ScalarProperty Name="SatisTarihi" ColumnName="SatisTarihi" />
+          <ScalarProperty Name="MusteriID" ColumnName="MusteriID" />
+          <ScalarProperty Name="ArabaID" ColumnName="ArabaID" />
+          <ScalarProperty Name="AlisFiyat" ColumnName="AlisFiyat" />
+          <ScalarProperty Name="Marka" ColumnName="Marka" />
+          <ScalarProperty Name="Model" ColumnName="Model" />
+          <ScalarProperty Name="Plaka" ColumnName="Plaka" />
+          <ScalarProperty Name="ResimID" ColumnName="ResimID" />
+          <ScalarProperty Name="İslemID" ColumnName="İslemID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="sysdiagrams">
+      <EntityTypeMapping TypeName="DB_OtoGaleriModel.sysdiagrams">
+        <MappingFragment StoreEntitySet="sysdiagrams">
+          <ScalarProperty Name="definition" ColumnName="definition" />
+          <ScalarProperty Name="version" ColumnName="version" />
+          <ScalarProperty Name="diagram_id" ColumnName="diagram_id" />
+          <ScalarProperty Name="principal_id" ColumnName="principal_id" />
+          <ScalarProperty Name="name" ColumnName="name" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+  </EntityContainerMapping>
+</Mapping>

@@ -1,0 +1,23 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="3.0" xmlns:edmx="http://schemas.microsoft.com/ado/2009/11/edmx">
+ <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <edmx:Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
+    <!-- Diagram content (shape and connector positions) -->
+    <edmx:Diagrams>
+      <Diagram DiagramId="bca591ffe72d4c288223b769cc3799cc" Name="Diagram1">
+        <EntityTypeShape EntityType="DB_OtoGaleriModel1.sysdiagrams" Width="1.5" PointX="0.75" PointY="6.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="DB_OtoGaleriModel1.TB_Araba" Width="1.5" PointX="3" PointY="1" IsExpanded="true" />
+        <EntityTypeShape EntityType="DB_OtoGaleriModel1.TB_Banka" Width="1.5" PointX="5.25" PointY="7.125" IsExpanded="true" />
+        <EntityTypeShape EntityType="DB_OtoGaleriModel1.TB_MarkaModel" Width="1.5" PointX="7.75" PointY="6.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="DB_OtoGaleriModel1.TB_Musteri" Width="1.5" PointX="5.25" PointY="2.125" IsExpanded="true" />
+        <EntityTypeShape EntityType="DB_OtoGaleriModel1.TB_Resimler" Width="1.5" PointX="0.75" PointY="2.5" IsExpanded="true" />
+        <EntityTypeShape EntityType="DB_OtoGaleriModel1.TB_Satilan" Width="1.5" PointX="7.5" PointY="1.5" IsExpanded="true" />
+        <AssociationConnector Association="DB_OtoGaleriModel1.FK_TB_Araba_TB_Resimler" ManuallyRouted="false" />
+        <AssociationConnector Association="DB_OtoGaleriModel1.FK_TB_Musteri_TB_Araba" ManuallyRouted="false" />
+        <AssociationConnector Association="DB_OtoGaleriModel1.FK_TB_Satilan_TB_Araba" ManuallyRouted="false" />
+        <AssociationConnector Association="DB_OtoGaleriModel1.FK_TB_Satilan_TB_Banka" ManuallyRouted="false" />
+        <AssociationConnector Association="DB_OtoGaleriModel1.FK_TB_Satilan_TB_Musteri" ManuallyRouted="false" />
+      </Diagram>
+    </edmx:Diagrams>
+  </edmx:Designer>
+</edmx:Edmx>

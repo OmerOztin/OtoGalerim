@@ -1,0 +1,238 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="OtoGalerimModel1" Alias="Self" annotation:UseStrongSpatialTypes="false" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm">
+  <EntityContainer Name="OtoGaleriEntities1" annotation:LazyLoadingEnabled="true">
+    <EntitySet Name="Araba" EntityType="OtoGalerimModel1.Araba" />
+    <EntitySet Name="Banka" EntityType="OtoGalerimModel1.Banka" />
+    <EntitySet Name="Musteri" EntityType="OtoGalerimModel1.Musteri" />
+    <EntitySet Name="Resimler" EntityType="OtoGalerimModel1.Resimler" />
+    <EntitySet Name="Satilan" EntityType="OtoGalerimModel1.Satilan" />
+    <AssociationSet Name="FK_Araba_Resimler" Association="OtoGalerimModel1.FK_Araba_Resimler">
+      <End Role="Resimler" EntitySet="Resimler" />
+      <End Role="Araba" EntitySet="Araba" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Banka_Araba" Association="OtoGalerimModel1.FK_Banka_Araba">
+      <End Role="Araba" EntitySet="Araba" />
+      <End Role="Banka" EntitySet="Banka" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Musteri_Araba" Association="OtoGalerimModel1.FK_Musteri_Araba">
+      <End Role="Araba" EntitySet="Araba" />
+      <End Role="Musteri" EntitySet="Musteri" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Satilan_Araba" Association="OtoGalerimModel1.FK_Satilan_Araba">
+      <End Role="Araba" EntitySet="Araba" />
+      <End Role="Satilan" EntitySet="Satilan" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Banka_Musteri" Association="OtoGalerimModel1.FK_Banka_Musteri">
+      <End Role="Musteri" EntitySet="Musteri" />
+      <End Role="Banka" EntitySet="Banka" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Satilan_Musteri" Association="OtoGalerimModel1.FK_Satilan_Musteri">
+      <End EntitySet="Musteri" Role="Musteri" />
+      <End EntitySet="Satilan" Role="Satilan" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Satilan_Resimler" Association="OtoGalerimModel1.FK_Satilan_Resimler">
+      <End Role="Resimler" EntitySet="Resimler" />
+      <End Role="Satilan" EntitySet="Satilan" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Musteri_Satilan" Association="OtoGalerimModel1.FK_Musteri_Satilan">
+      <End EntitySet="Satilan" Role="Satilan" />
+      <End EntitySet="Musteri" Role="Musteri" />
+    </AssociationSet>
+    <EntitySet Name="Calisanlar" EntityType="OtoGalerimModel1.Calisanlar" />
+    <EntitySet Name="sysdiagrams" EntityType="OtoGalerimModel1.sysdiagrams" />
+  </EntityContainer>
+  <EntityType Name="Araba">
+    <Key>
+      <PropertyRef Name="ArabaID" />
+    </Key>
+    <Property Name="ArabaID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="Fiyat" Type="Int32" />
+    <Property Name="Marka" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="Model" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="Yil" Type="DateTime" Precision="3" />
+    <Property Name="Km" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="Yakıt" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="Renk" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="AracTNo" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="Plaka" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="AlisFiyat" Type="Int32" />
+    <Property Name="TedarikçiAdi" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="TedarikçiTel" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="AlindigiTarih" Type="DateTime" Precision="3" />
+    <Property Name="MusteriID" Type="Int32" />
+    <Property Name="ResimID" Type="Int32" />
+    <NavigationProperty Name="Resimler" Relationship="OtoGalerimModel1.FK_Araba_Resimler" FromRole="Araba" ToRole="Resimler" />
+    <NavigationProperty Name="Banka" Relationship="OtoGalerimModel1.FK_Banka_Araba" FromRole="Araba" ToRole="Banka" />
+    <NavigationProperty Name="Musteri" Relationship="OtoGalerimModel1.FK_Musteri_Araba" FromRole="Araba" ToRole="Musteri" />
+    <NavigationProperty Name="Satilan" Relationship="OtoGalerimModel1.FK_Satilan_Araba" FromRole="Araba" ToRole="Satilan" />
+  </EntityType>
+  <EntityType Name="Banka">
+    <Key>
+      <PropertyRef Name="MusteriID" />
+    </Key>
+    <Property Name="MusteriID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="Musteriİsim" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="ArabaID" Type="Int32" />
+    <Property Name="AlisFiyat" Type="Int32" />
+    <Property Name="SatisFiyat" Type="Int32" />
+    <NavigationProperty Name="Araba" Relationship="OtoGalerimModel1.FK_Banka_Araba" FromRole="Banka" ToRole="Araba" />
+    <NavigationProperty Name="Musteri" Relationship="OtoGalerimModel1.FK_Banka_Musteri" FromRole="Banka" ToRole="Musteri" />
+  </EntityType>
+  <EntityType Name="Musteri">
+    <Key>
+      <PropertyRef Name="MusteriID" />
+    </Key>
+    <Property Name="MusteriID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="Musteriİsim" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="Telefon" Type="String" MaxLength="13" FixedLength="false" Unicode="false" />
+    <Property Name="Adres" Type="String" MaxLength="80" FixedLength="false" Unicode="false" />
+    <Property Name="ArabaID" Type="Int32" />
+    <NavigationProperty Name="Araba" Relationship="OtoGalerimModel1.FK_Musteri_Araba" FromRole="Musteri" ToRole="Araba" />
+    <NavigationProperty Name="Banka" Relationship="OtoGalerimModel1.FK_Banka_Musteri" FromRole="Musteri" ToRole="Banka" />
+    <NavigationProperty Name="Satilan" Relationship="OtoGalerimModel1.FK_Satilan_Musteri" FromRole="Musteri" ToRole="Satilan" />
+    <Property Name="SatisID" Type="Int32" />
+    <NavigationProperty Name="Satilan1" Relationship="OtoGalerimModel1.FK_Musteri_Satilan" FromRole="Musteri" ToRole="Satilan" />
+  </EntityType>
+  <EntityType Name="Resimler">
+    <Key>
+      <PropertyRef Name="ResimID" />
+    </Key>
+    <Property Name="ResimID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="ArabaID" Type="Int32" />
+    <Property Name="ResimYolu" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+    <NavigationProperty Name="Araba" Relationship="OtoGalerimModel1.FK_Araba_Resimler" FromRole="Resimler" ToRole="Araba" />
+    <NavigationProperty Name="Satilan" Relationship="OtoGalerimModel1.FK_Satilan_Resimler" FromRole="Resimler" ToRole="Satilan" />
+  </EntityType>
+  <EntityType Name="Satilan">
+    <Key>
+      <PropertyRef Name="SatisID" />
+    </Key>
+    <Property Name="SatisID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="SatisFiyat" Type="Int32" />
+    <Property Name="SatisTarihi" Type="DateTime" Precision="3" />
+    <Property Name="MusteriID" Type="Int32" />
+    <Property Name="ArabaID" Type="Int32" />
+    <Property Name="AlisFiyat" Type="Int32" />
+    <Property Name="Marka" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="Model" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="Plaka" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <NavigationProperty Name="Araba" Relationship="OtoGalerimModel1.FK_Satilan_Araba" FromRole="Satilan" ToRole="Araba" />
+    <NavigationProperty Name="Musteri" Relationship="OtoGalerimModel1.FK_Satilan_Musteri" FromRole="Satilan" ToRole="Musteri" />
+    <Property Name="ResimID" Type="Int32" />
+    <NavigationProperty Name="Resimler" Relationship="OtoGalerimModel1.FK_Satilan_Resimler" FromRole="Satilan" ToRole="Resimler" />
+    <NavigationProperty Name="Musteri1" Relationship="OtoGalerimModel1.FK_Musteri_Satilan" FromRole="Satilan" ToRole="Musteri" />
+  </EntityType>
+  <Association Name="FK_Araba_Resimler">
+    <End Type="OtoGalerimModel1.Resimler" Role="Resimler" Multiplicity="0..1" />
+    <End Type="OtoGalerimModel1.Araba" Role="Araba" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Resimler">
+        <PropertyRef Name="ResimID" />
+      </Principal>
+      <Dependent Role="Araba">
+        <PropertyRef Name="ResimID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Banka_Araba">
+    <End Type="OtoGalerimModel1.Araba" Role="Araba" Multiplicity="0..1" />
+    <End Type="OtoGalerimModel1.Banka" Role="Banka" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Araba">
+        <PropertyRef Name="ArabaID" />
+      </Principal>
+      <Dependent Role="Banka">
+        <PropertyRef Name="ArabaID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Musteri_Araba">
+    <End Type="OtoGalerimModel1.Araba" Role="Araba" Multiplicity="0..1" />
+    <End Type="OtoGalerimModel1.Musteri" Role="Musteri" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Araba">
+        <PropertyRef Name="ArabaID" />
+      </Principal>
+      <Dependent Role="Musteri">
+        <PropertyRef Name="ArabaID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Satilan_Araba">
+    <End Type="OtoGalerimModel1.Araba" Role="Araba" Multiplicity="0..1" />
+    <End Type="OtoGalerimModel1.Satilan" Role="Satilan" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Araba">
+        <PropertyRef Name="ArabaID" />
+      </Principal>
+      <Dependent Role="Satilan">
+        <PropertyRef Name="ArabaID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Banka_Musteri">
+    <End Type="OtoGalerimModel1.Musteri" Role="Musteri" Multiplicity="1" />
+    <End Type="OtoGalerimModel1.Banka" Role="Banka" Multiplicity="0..1" />
+    <ReferentialConstraint>
+      <Principal Role="Musteri">
+        <PropertyRef Name="MusteriID" />
+      </Principal>
+      <Dependent Role="Banka">
+        <PropertyRef Name="MusteriID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Satilan_Musteri">
+    <End Type="OtoGalerimModel1.Musteri" Multiplicity="0..1" Role="Musteri" />
+    <End Type="OtoGalerimModel1.Satilan" Multiplicity="*" Role="Satilan" />
+    <ReferentialConstraint>
+      <Principal Role="Musteri">
+        <PropertyRef Name="MusteriID" />
+      </Principal>
+      <Dependent Role="Satilan">
+        <PropertyRef Name="MusteriID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Satilan_Resimler">
+    <End Type="OtoGalerimModel1.Resimler" Role="Resimler" Multiplicity="0..1" />
+    <End Type="OtoGalerimModel1.Satilan" Role="Satilan" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Resimler">
+        <PropertyRef Name="ResimID" />
+      </Principal>
+      <Dependent Role="Satilan">
+        <PropertyRef Name="ResimID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Musteri_Satilan">
+    <End Type="OtoGalerimModel1.Satilan" Multiplicity="0..1" Role="Satilan" />
+    <End Type="OtoGalerimModel1.Musteri" Multiplicity="*" Role="Musteri" />
+    <ReferentialConstraint>
+      <Principal Role="Satilan">
+        <PropertyRef Name="SatisID" />
+      </Principal>
+      <Dependent Role="Musteri">
+        <PropertyRef Name="SatisID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <EntityType Name="Calisanlar">
+    <Key>
+      <PropertyRef Name="CalisanID" />
+    </Key>
+    <Property Name="CalisanID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="Yer" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+  </EntityType>
+  <EntityType Name="sysdiagrams">
+    <Key>
+      <PropertyRef Name="diagram_id" />
+    </Key>
+    <Property Name="name" Type="String" Nullable="false" MaxLength="128" FixedLength="false" Unicode="true" />
+    <Property Name="principal_id" Type="Int32" Nullable="false" />
+    <Property Name="diagram_id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="version" Type="Int32" />
+    <Property Name="definition" Type="Binary" MaxLength="Max" FixedLength="false" />
+  </EntityType>
+</Schema>

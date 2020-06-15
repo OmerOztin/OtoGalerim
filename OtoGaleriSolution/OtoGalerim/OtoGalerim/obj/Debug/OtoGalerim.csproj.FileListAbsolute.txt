@@ -1,0 +1,121 @@
+c:\users\ömer\documents\visual studio 2013\Projects\OtoGalerim\OtoGalerim\bin\Debug\OtoGalerim.exe.config
+c:\users\ömer\documents\visual studio 2013\Projects\OtoGalerim\OtoGalerim\bin\Debug\OtoGalerim.exe
+c:\users\ömer\documents\visual studio 2013\Projects\OtoGalerim\OtoGalerim\bin\Debug\OtoGalerim.pdb
+c:\users\ömer\documents\visual studio 2013\Projects\OtoGalerim\OtoGalerim\obj\Debug\OtoGalerim.csprojResolveAssemblyReference.cache
+c:\users\ömer\documents\visual studio 2013\Projects\OtoGalerim\OtoGalerim\obj\Debug\OtoGalerim.AnaEkran.resources
+c:\users\ömer\documents\visual studio 2013\Projects\OtoGalerim\OtoGalerim\obj\Debug\OtoGalerim.Properties.Resources.resources
+c:\users\ömer\documents\visual studio 2013\Projects\OtoGalerim\OtoGalerim\obj\Debug\OtoGalerim.csproj.GenerateResource.Cache
+c:\users\ömer\documents\visual studio 2013\Projects\OtoGalerim\OtoGalerim\obj\Debug\OtoGalerim.exe
+c:\users\ömer\documents\visual studio 2013\Projects\OtoGalerim\OtoGalerim\obj\Debug\OtoGalerim.pdb
+c:\users\ömer\documents\visual studio 2013\Projects\OtoGalerim\OtoGalerim\obj\Debug\OtoGalerim.Garaj.resources
+c:\users\ömer\documents\visual studio 2013\Projects\OtoGalerim\OtoGalerim\obj\Debug\OtoGalerim.Satildi.resources
+C:\Users\Ömer\Documents\Visual Studio 2013\Projects\OtoGalerim\OtoGalerim\obj\Debug\OtoGalerim.Araba_Ekle.resources
+C:\Users\Ömer\Documents\Visual Studio 2013\Projects\OtoGalerim\OtoGalerim\obj\Debug\OtoGalerim.ArabaSat.resources
+C:\Users\Ömer\documents\visual studio 2013\Projects\OtoGalerim\OtoGalerim\obj\Debug\OtoGalerim.ArabaAyrinti.resources
+C:\Users\Ömer\documents\visual studio 2013\Projects\OtoGalerim\OtoGalerim\bin\Debug\EntityFramework.dll
+C:\Users\Ömer\documents\visual studio 2013\Projects\OtoGalerim\OtoGalerim\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\Ömer\documents\visual studio 2013\Projects\OtoGalerim\OtoGalerim\bin\Debug\EntityFramework.xml
+C:\Users\Ömer\documents\visual studio 2013\Projects\OtoGalerim\OtoGalerim\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\Ömer\Documents\Visual Studio 2013\Projects\OtoGalerim\OtoGalerim\obj\Debug\OtoGalerim.MusterliSec.resources
+C:\Users\Yasim\Desktop\OtoGalerim\OtoGalerim\bin\Debug\OtoGalerim.exe.config
+C:\Users\Yasim\Desktop\OtoGalerim\OtoGalerim\obj\Debug\OtoGalerim.exe
+C:\Users\Yasim\Desktop\OtoGalerim\OtoGalerim\obj\Debug\OtoGalerim.pdb
+C:\Users\Ömer\Desktop\OtoGalerim\OtoGalerim\bin\Debug\OtoGalerim.exe.config
+C:\Users\Ömer\Desktop\OtoGalerim\OtoGalerim\obj\Debug\OtoGalerim.exe
+C:\Users\Ömer\Desktop\OtoGalerim\OtoGalerim\obj\Debug\OtoGalerim.pdb
+C:\Users\Ömer\Desktop\OtoGalerim\OtoGalerim\bin\Debug\OtoGalerim.exe
+C:\Users\Ömer\Desktop\OtoGalerim\OtoGalerim\bin\Debug\OtoGalerim.pdb
+C:\Users\Ömer\Desktop\OtoGalerim\OtoGalerim\bin\Debug\EntityFramework.dll
+C:\Users\Ömer\Desktop\OtoGalerim\OtoGalerim\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\Ömer\Desktop\OtoGalerim\OtoGalerim\bin\Debug\EntityFramework.xml
+C:\Users\Ömer\Desktop\OtoGalerim\OtoGalerim\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\Ömer\Desktop\OtoGalerim\OtoGalerim\obj\Debug\OtoGalerim.csprojResolveAssemblyReference.cache
+C:\Users\Ömer\Desktop\OtoGalerim\OtoGalerim\obj\Debug\OtoGalerim.AnaEkran.resources
+C:\Users\Ömer\Desktop\OtoGalerim\OtoGalerim\obj\Debug\OtoGalerim.Araba_Ekle.resources
+C:\Users\Ömer\Desktop\OtoGalerim\OtoGalerim\obj\Debug\OtoGalerim.ArabaAyrinti.resources
+C:\Users\Ömer\Desktop\OtoGalerim\OtoGalerim\obj\Debug\OtoGalerim.ArabaSat.resources
+C:\Users\Ömer\Desktop\OtoGalerim\OtoGalerim\obj\Debug\OtoGalerim.Garaj.resources
+C:\Users\Ömer\Desktop\OtoGalerim\OtoGalerim\obj\Debug\OtoGalerim.MusterliSec.resources
+C:\Users\Ömer\Desktop\OtoGalerim\OtoGalerim\obj\Debug\OtoGalerim.Properties.Resources.resources
+C:\Users\Ömer\Desktop\OtoGalerim\OtoGalerim\obj\Debug\OtoGalerim.Satildi.resources
+C:\Users\Ömer\Desktop\OtoGalerim\OtoGalerim\obj\Debug\OtoGalerim.csproj.GenerateResource.Cache
+D:\Projeler\OtoGaleriSolution\OtoGalerim\OtoGalerim\bin\Debug\OtoGalerim.exe.config
+D:\Projeler\OtoGaleriSolution\OtoGalerim\OtoGalerim\obj\Debug\OtoGalerim.exe
+D:\Projeler\OtoGaleriSolution\OtoGalerim\OtoGalerim\obj\Debug\OtoGalerim.pdb
+D:\Projeler\OtoGaleriSolution\OtoGalerim\OtoGalerim\bin\Debug\OtoGalerim.exe
+D:\Projeler\OtoGaleriSolution\OtoGalerim\OtoGalerim\bin\Debug\OtoGalerim.pdb
+D:\Projeler\OtoGaleriSolution\OtoGalerim\OtoGalerim\bin\Debug\BusinessGaleri.dll
+D:\Projeler\OtoGaleriSolution\OtoGalerim\OtoGalerim\bin\Debug\EntityFramework.dll
+D:\Projeler\OtoGaleriSolution\OtoGalerim\OtoGalerim\bin\Debug\EntityFramework.SqlServer.dll
+D:\Projeler\OtoGaleriSolution\OtoGalerim\OtoGalerim\bin\Debug\GaleriEntity.dll
+D:\Projeler\OtoGaleriSolution\OtoGalerim\OtoGalerim\bin\Debug\SurragateGaleri.dll
+D:\Projeler\OtoGaleriSolution\OtoGalerim\OtoGalerim\bin\Debug\BusinessGaleri.pdb
+D:\Projeler\OtoGaleriSolution\OtoGalerim\OtoGalerim\bin\Debug\GaleriEntity.pdb
+D:\Projeler\OtoGaleriSolution\OtoGalerim\OtoGalerim\bin\Debug\SurragateGaleri.pdb
+D:\Projeler\OtoGaleriSolution\OtoGalerim\OtoGalerim\bin\Debug\EntityFramework.xml
+D:\Projeler\OtoGaleriSolution\OtoGalerim\OtoGalerim\bin\Debug\EntityFramework.SqlServer.xml
+D:\Projeler\OtoGaleriSolution\OtoGalerim\OtoGalerim\obj\Debug\OtoGalerim.csprojResolveAssemblyReference.cache
+D:\Projeler\OtoGaleriSolution\OtoGalerim\OtoGalerim\obj\Debug\OtoGalerim.AnaEkran.resources
+D:\Projeler\OtoGaleriSolution\OtoGalerim\OtoGalerim\obj\Debug\OtoGalerim.Araba_Ekle.resources
+D:\Projeler\OtoGaleriSolution\OtoGalerim\OtoGalerim\obj\Debug\OtoGalerim.ArabaAyrinti.resources
+D:\Projeler\OtoGaleriSolution\OtoGalerim\OtoGalerim\obj\Debug\OtoGalerim.ArabaSat.resources
+D:\Projeler\OtoGaleriSolution\OtoGalerim\OtoGalerim\obj\Debug\OtoGalerim.Garaj.resources
+D:\Projeler\OtoGaleriSolution\OtoGalerim\OtoGalerim\obj\Debug\OtoGalerim.MusterliSec.resources
+D:\Projeler\OtoGaleriSolution\OtoGalerim\OtoGalerim\obj\Debug\OtoGalerim.Properties.Resources.resources
+D:\Projeler\OtoGaleriSolution\OtoGalerim\OtoGalerim\obj\Debug\OtoGalerim.Satildi.resources
+D:\Projeler\OtoGaleriSolution\OtoGalerim\OtoGalerim\obj\Debug\OtoGalerim.csproj.GenerateResource.Cache
+C:\Users\Ömer2c\Desktop\OtoGaleriSolution\OtoGalerim\OtoGalerim\bin\Debug\OtoGalerim.exe.config
+C:\Users\Ömer2c\Desktop\OtoGaleriSolution\OtoGalerim\OtoGalerim\obj\Debug\OtoGalerim.exe
+C:\Users\Ömer2c\Desktop\OtoGaleriSolution\OtoGalerim\OtoGalerim\obj\Debug\OtoGalerim.pdb
+C:\Users\Ömer2c\Desktop\OtoGaleriSolution\OtoGalerim\OtoGalerim\bin\Debug\OtoGalerim.exe
+C:\Users\Ömer2c\Desktop\OtoGaleriSolution\OtoGalerim\OtoGalerim\bin\Debug\OtoGalerim.pdb
+C:\Users\Ömer2c\Desktop\OtoGaleriSolution\OtoGalerim\OtoGalerim\bin\Debug\BusinessGaleri.dll
+C:\Users\Ömer2c\Desktop\OtoGaleriSolution\OtoGalerim\OtoGalerim\bin\Debug\EntityFramework.dll
+C:\Users\Ömer2c\Desktop\OtoGaleriSolution\OtoGalerim\OtoGalerim\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\Ömer2c\Desktop\OtoGaleriSolution\OtoGalerim\OtoGalerim\bin\Debug\GaleriEntity.dll
+C:\Users\Ömer2c\Desktop\OtoGaleriSolution\OtoGalerim\OtoGalerim\bin\Debug\SurragateGaleri.dll
+C:\Users\Ömer2c\Desktop\OtoGaleriSolution\OtoGalerim\OtoGalerim\bin\Debug\BusinessGaleri.pdb
+C:\Users\Ömer2c\Desktop\OtoGaleriSolution\OtoGalerim\OtoGalerim\bin\Debug\GaleriEntity.pdb
+C:\Users\Ömer2c\Desktop\OtoGaleriSolution\OtoGalerim\OtoGalerim\bin\Debug\SurragateGaleri.pdb
+C:\Users\Ömer2c\Desktop\OtoGaleriSolution\OtoGalerim\OtoGalerim\bin\Debug\EntityFramework.xml
+C:\Users\Ömer2c\Desktop\OtoGaleriSolution\OtoGalerim\OtoGalerim\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\Ömer2c\Desktop\OtoGaleriSolution\OtoGalerim\OtoGalerim\obj\Debug\OtoGalerim.csprojResolveAssemblyReference.cache
+C:\Users\Ömer2c\Desktop\OtoGaleriSolution\OtoGalerim\OtoGalerim\obj\Debug\OtoGalerim.AnaEkran.resources
+C:\Users\Ömer2c\Desktop\OtoGaleriSolution\OtoGalerim\OtoGalerim\obj\Debug\OtoGalerim.Araba_Ekle.resources
+C:\Users\Ömer2c\Desktop\OtoGaleriSolution\OtoGalerim\OtoGalerim\obj\Debug\OtoGalerim.ArabaAyrinti.resources
+C:\Users\Ömer2c\Desktop\OtoGaleriSolution\OtoGalerim\OtoGalerim\obj\Debug\OtoGalerim.ArabaSat.resources
+C:\Users\Ömer2c\Desktop\OtoGaleriSolution\OtoGalerim\OtoGalerim\obj\Debug\OtoGalerim.Garaj.resources
+C:\Users\Ömer2c\Desktop\OtoGaleriSolution\OtoGalerim\OtoGalerim\obj\Debug\OtoGalerim.MusterliSec.resources
+C:\Users\Ömer2c\Desktop\OtoGaleriSolution\OtoGalerim\OtoGalerim\obj\Debug\OtoGalerim.Properties.Resources.resources
+C:\Users\Ömer2c\Desktop\OtoGaleriSolution\OtoGalerim\OtoGalerim\obj\Debug\OtoGalerim.Satildi.resources
+C:\Users\Ömer2c\Desktop\OtoGaleriSolution\OtoGalerim\OtoGalerim\obj\Debug\OtoGalerim.csproj.GenerateResource.Cache
+D:\OtoGaleriSolution\OtoGalerim\OtoGalerim\bin\Debug\OtoGalerim.exe.config
+D:\OtoGaleriSolution\OtoGalerim\OtoGalerim\obj\Debug\OtoGalerim.exe
+D:\OtoGaleriSolution\OtoGalerim\OtoGalerim\obj\Debug\OtoGalerim.pdb
+D:\OtoGaleriSolution\OtoGalerim\OtoGalerim\bin\Debug\OtoGalerim.exe
+D:\OtoGaleriSolution\OtoGalerim\OtoGalerim\bin\Debug\OtoGalerim.pdb
+D:\OtoGaleriSolution\OtoGalerim\OtoGalerim\bin\Debug\BusinessGaleri.dll
+D:\OtoGaleriSolution\OtoGalerim\OtoGalerim\bin\Debug\EntityFramework.dll
+D:\OtoGaleriSolution\OtoGalerim\OtoGalerim\bin\Debug\EntityFramework.SqlServer.dll
+D:\OtoGaleriSolution\OtoGalerim\OtoGalerim\bin\Debug\GaleriEntity.dll
+D:\OtoGaleriSolution\OtoGalerim\OtoGalerim\bin\Debug\SurragateGaleri.dll
+D:\OtoGaleriSolution\OtoGalerim\OtoGalerim\bin\Debug\BusinessGaleri.pdb
+D:\OtoGaleriSolution\OtoGalerim\OtoGalerim\bin\Debug\GaleriEntity.pdb
+D:\OtoGaleriSolution\OtoGalerim\OtoGalerim\bin\Debug\SurragateGaleri.pdb
+D:\OtoGaleriSolution\OtoGalerim\OtoGalerim\bin\Debug\EntityFramework.xml
+D:\OtoGaleriSolution\OtoGalerim\OtoGalerim\bin\Debug\EntityFramework.SqlServer.xml
+D:\OtoGaleriSolution\OtoGalerim\OtoGalerim\obj\Debug\OtoGalerim.csprojResolveAssemblyReference.cache
+D:\OtoGaleriSolution\OtoGalerim\OtoGalerim\obj\Debug\OtoGalerim.AnaEkran.resources
+D:\OtoGaleriSolution\OtoGalerim\OtoGalerim\obj\Debug\OtoGalerim.Araba_Ekle.resources
+D:\OtoGaleriSolution\OtoGalerim\OtoGalerim\obj\Debug\OtoGalerim.ArabaAyrinti.resources
+D:\OtoGaleriSolution\OtoGalerim\OtoGalerim\obj\Debug\OtoGalerim.ArabaSat.resources
+D:\OtoGaleriSolution\OtoGalerim\OtoGalerim\obj\Debug\OtoGalerim.Garaj.resources
+D:\OtoGaleriSolution\OtoGalerim\OtoGalerim\obj\Debug\OtoGalerim.MusterliSec.resources
+D:\OtoGaleriSolution\OtoGalerim\OtoGalerim\obj\Debug\OtoGalerim.Properties.Resources.resources
+D:\OtoGaleriSolution\OtoGalerim\OtoGalerim\obj\Debug\OtoGalerim.Satildi.resources
+D:\OtoGaleriSolution\OtoGalerim\OtoGalerim\obj\Debug\OtoGalerim.csproj.GenerateResource.Cache
+D:\OtoGaleriSolution\OtoGalerim\OtoGalerim\obj\Debug\OtoGalerim.Banka.resources
+D:\OtoGaleriSolution\OtoGalerim\OtoGalerim\obj\Debug\OtoGalerim.Hakkinda.resources
+C:\Users\Ömer\Desktop\OtoGaleriSolution\OtoGalerim\OtoGalerim\bin\Debug\OtoGalerim.exe.config
+C:\Users\Ömer\Desktop\OtoGaleriSolution\OtoGalerim\OtoGalerim\obj\Debug\OtoGalerim.exe
+C:\Users\Ömer\Desktop\OtoGaleriSolution\OtoGalerim\OtoGalerim\obj\Debug\OtoGalerim.pdb

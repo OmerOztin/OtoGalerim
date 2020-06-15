@@ -1,0 +1,179 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="DB_OtoGaleriModel" Alias="Self" annotation:UseStrongSpatialTypes="false" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm">
+  <EntityContainer Name="DB_OtoGaleriEntities1" annotation:LazyLoadingEnabled="true">
+    <EntitySet Name="TB_Araba" EntityType="DB_OtoGaleriModel.TB_Araba" />
+    <EntitySet Name="TB_Banka" EntityType="DB_OtoGaleriModel.TB_Banka" />
+    <EntitySet Name="TB_MarkaModel" EntityType="DB_OtoGaleriModel.TB_MarkaModel" />
+    <EntitySet Name="TB_Musteri" EntityType="DB_OtoGaleriModel.TB_Musteri" />
+    <EntitySet Name="TB_Resimler" EntityType="DB_OtoGaleriModel.TB_Resimler" />
+    <EntitySet Name="TB_Satilan" EntityType="DB_OtoGaleriModel.TB_Satilan" />
+    <AssociationSet Name="FK_TB_Araba_TB_Resimler" Association="DB_OtoGaleriModel.FK_TB_Araba_TB_Resimler">
+      <End Role="TB_Resimler" EntitySet="TB_Resimler" />
+      <End Role="TB_Araba" EntitySet="TB_Araba" />
+    </AssociationSet>
+    <AssociationSet Name="FK_TB_Musteri_TB_Araba" Association="DB_OtoGaleriModel.FK_TB_Musteri_TB_Araba">
+      <End Role="TB_Araba" EntitySet="TB_Araba" />
+      <End Role="TB_Musteri" EntitySet="TB_Musteri" />
+    </AssociationSet>
+    <AssociationSet Name="FK_TB_Satilan_TB_Araba" Association="DB_OtoGaleriModel.FK_TB_Satilan_TB_Araba">
+      <End Role="TB_Araba" EntitySet="TB_Araba" />
+      <End Role="TB_Satilan" EntitySet="TB_Satilan" />
+    </AssociationSet>
+    <AssociationSet Name="FK_TB_Satilan_TB_Banka" Association="DB_OtoGaleriModel.FK_TB_Satilan_TB_Banka">
+      <End Role="TB_Banka" EntitySet="TB_Banka" />
+      <End Role="TB_Satilan" EntitySet="TB_Satilan" />
+    </AssociationSet>
+    <AssociationSet Name="FK_TB_Satilan_TB_Musteri" Association="DB_OtoGaleriModel.FK_TB_Satilan_TB_Musteri">
+      <End Role="TB_Musteri" EntitySet="TB_Musteri" />
+      <End Role="TB_Satilan" EntitySet="TB_Satilan" />
+    </AssociationSet>
+  </EntityContainer>
+  <EntityType Name="TB_Araba">
+    <Key>
+      <PropertyRef Name="ArabaID" />
+    </Key>
+    <Property Name="ArabaID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="Marka" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="Model" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="Yil" Type="DateTime" Precision="3" />
+    <Property Name="Km" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="Yakıt" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="Renk" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="AracTNo" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="Plaka" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="AlisFiyat" Type="Int32" />
+    <Property Name="Fiyat" Type="Int32" />
+    <Property Name="TedarikciAdi" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="TedarikciTel" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="AlindigiTarih" Type="DateTime" Precision="3" />
+    <Property Name="ResimID" Type="Int32" />
+    <Property Name="Satildimi" Type="Int32" />
+    <NavigationProperty Name="TB_Resimler" Relationship="DB_OtoGaleriModel.FK_TB_Araba_TB_Resimler" FromRole="TB_Araba" ToRole="TB_Resimler" />
+    <NavigationProperty Name="TB_Musteri" Relationship="DB_OtoGaleriModel.FK_TB_Musteri_TB_Araba" FromRole="TB_Araba" ToRole="TB_Musteri" />
+    <NavigationProperty Name="TB_Satilan" Relationship="DB_OtoGaleriModel.FK_TB_Satilan_TB_Araba" FromRole="TB_Araba" ToRole="TB_Satilan" />
+  </EntityType>
+  <EntityType Name="TB_Banka">
+    <Key>
+      <PropertyRef Name="İslemID" />
+    </Key>
+    <Property Name="İslemID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="İslemAciklama" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+    <Property Name="İslemCesidi" Type="Int32" />
+    <Property Name="BankadakiPara" Type="Int32" />
+    <Property Name="AlacakMiktari" Type="Int32" />
+    <Property Name="BorcMiktari" Type="Int32" />
+    <Property Name="KasadakiPara" Type="Int32" />
+    <NavigationProperty Name="TB_Satilan" Relationship="DB_OtoGaleriModel.FK_TB_Satilan_TB_Banka" FromRole="TB_Banka" ToRole="TB_Satilan" />
+  </EntityType>
+  <EntityType Name="TB_MarkaModel">
+    <Key>
+      <PropertyRef Name="ArabaID" />
+    </Key>
+    <Property Name="ArabaID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="MarkaKodu" Type="Int32" />
+    <Property Name="ModelKodu" Type="Int32" />
+    <Property Name="MarkaAdı" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+    <Property Name="ModelAdı" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+  </EntityType>
+  <EntityType Name="TB_Musteri">
+    <Key>
+      <PropertyRef Name="MusteriID" />
+    </Key>
+    <Property Name="MusteriID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="Musteriİsim" Type="String" MaxLength="75" FixedLength="false" Unicode="false" />
+    <Property Name="Telefon" Type="String" MaxLength="15" FixedLength="false" Unicode="false" />
+    <Property Name="Adres" Type="String" MaxLength="100" FixedLength="false" Unicode="false" />
+    <Property Name="ArabaID" Type="Int32" />
+    <Property Name="TC" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <NavigationProperty Name="TB_Araba" Relationship="DB_OtoGaleriModel.FK_TB_Musteri_TB_Araba" FromRole="TB_Musteri" ToRole="TB_Araba" />
+    <NavigationProperty Name="TB_Satilan" Relationship="DB_OtoGaleriModel.FK_TB_Satilan_TB_Musteri" FromRole="TB_Musteri" ToRole="TB_Satilan" />
+  </EntityType>
+  <EntityType Name="TB_Resimler">
+    <Key>
+      <PropertyRef Name="ResimID" />
+    </Key>
+    <Property Name="ResimID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="ArabaID" Type="Int32" />
+    <Property Name="ResimYolu" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+    <NavigationProperty Name="TB_Araba" Relationship="DB_OtoGaleriModel.FK_TB_Araba_TB_Resimler" FromRole="TB_Resimler" ToRole="TB_Araba" />
+  </EntityType>
+  <EntityType Name="TB_Satilan">
+    <Key>
+      <PropertyRef Name="SatisID" />
+    </Key>
+    <Property Name="SatisID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="SatisFiyat" Type="Int32" />
+    <Property Name="SatisTarihi" Type="DateTime" Precision="3" />
+    <Property Name="MusteriID" Type="Int32" />
+    <Property Name="ArabaID" Type="Int32" />
+    <Property Name="AlisFiyat" Type="Int32" />
+    <Property Name="Marka" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="Model" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="Plaka" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="ResimID" Type="Int32" />
+    <Property Name="İslemID" Type="Int32" />
+    <NavigationProperty Name="TB_Araba" Relationship="DB_OtoGaleriModel.FK_TB_Satilan_TB_Araba" FromRole="TB_Satilan" ToRole="TB_Araba" />
+    <NavigationProperty Name="TB_Banka" Relationship="DB_OtoGaleriModel.FK_TB_Satilan_TB_Banka" FromRole="TB_Satilan" ToRole="TB_Banka" />
+    <NavigationProperty Name="TB_Musteri" Relationship="DB_OtoGaleriModel.FK_TB_Satilan_TB_Musteri" FromRole="TB_Satilan" ToRole="TB_Musteri" />
+  </EntityType>
+  <Association Name="FK_TB_Araba_TB_Resimler">
+    <End Type="DB_OtoGaleriModel.TB_Resimler" Role="TB_Resimler" Multiplicity="0..1" />
+    <End Type="DB_OtoGaleriModel.TB_Araba" Role="TB_Araba" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="TB_Resimler">
+        <PropertyRef Name="ResimID" />
+      </Principal>
+      <Dependent Role="TB_Araba">
+        <PropertyRef Name="ResimID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_TB_Musteri_TB_Araba">
+    <End Type="DB_OtoGaleriModel.TB_Araba" Role="TB_Araba" Multiplicity="0..1" />
+    <End Type="DB_OtoGaleriModel.TB_Musteri" Role="TB_Musteri" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="TB_Araba">
+        <PropertyRef Name="ArabaID" />
+      </Principal>
+      <Dependent Role="TB_Musteri">
+        <PropertyRef Name="ArabaID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_TB_Satilan_TB_Araba">
+    <End Type="DB_OtoGaleriModel.TB_Araba" Role="TB_Araba" Multiplicity="0..1" />
+    <End Type="DB_OtoGaleriModel.TB_Satilan" Role="TB_Satilan" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="TB_Araba">
+        <PropertyRef Name="ArabaID" />
+      </Principal>
+      <Dependent Role="TB_Satilan">
+        <PropertyRef Name="ArabaID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_TB_Satilan_TB_Banka">
+    <End Type="DB_OtoGaleriModel.TB_Banka" Role="TB_Banka" Multiplicity="0..1" />
+    <End Type="DB_OtoGaleriModel.TB_Satilan" Role="TB_Satilan" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="TB_Banka">
+        <PropertyRef Name="İslemID" />
+      </Principal>
+      <Dependent Role="TB_Satilan">
+        <PropertyRef Name="İslemID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_TB_Satilan_TB_Musteri">
+    <End Type="DB_OtoGaleriModel.TB_Musteri" Role="TB_Musteri" Multiplicity="0..1" />
+    <End Type="DB_OtoGaleriModel.TB_Satilan" Role="TB_Satilan" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="TB_Musteri">
+        <PropertyRef Name="MusteriID" />
+      </Principal>
+      <Dependent Role="TB_Satilan">
+        <PropertyRef Name="MusteriID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+</Schema>
